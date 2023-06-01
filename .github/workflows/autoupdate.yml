@@ -1,0 +1,19 @@
+name: autoupdate
+on:
+  push: {}
+jobs:
+  autoupdate:
+    name: autoupdate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://chinthakagodawita/autoupdate-action:latest
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          DRY_RUN: "false"
+          PR_FILTER: "labelled"
+          PR_LABELS: "autoupdate"
+          EXCLUDED_LABELS: "wontfix"
+          MERGE_MSG: "Branch was auto-updated."
+          RETRY_COUNT: "5"
+          RETRY_SLEEP: "300"
+          MERGE_CONFLICT_ACTION: "fail"
