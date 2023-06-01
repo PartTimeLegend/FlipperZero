@@ -1,0 +1,56 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 92 00 00 00
+# 
+name: Vertical
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 8A 00 00 00
+# 
+name: Horizontal
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 87 00 00 00
+# 
+name: Eco
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 81 00 00 00
+# 
+name: Pre_on
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 82 00 00 00
+# 
+name: Pre_off
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 83 00 00 00
+# 
+name: Light
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 9E 00 00 00
+# 
+name: Plus
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 89 00 00 00
+# 
+name: Minus
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 9F 00 00 00
